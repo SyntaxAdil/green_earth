@@ -1,2 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@utility hero-image {
+  background:
+    url("/src/assets/hero-leaf1.png"),
+    url("/src/assets/hero-leaf2.png"),
+    #cff0dc;
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: contain;
+}
+
