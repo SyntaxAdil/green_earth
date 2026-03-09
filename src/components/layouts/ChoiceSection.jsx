@@ -103,7 +103,7 @@ const ChoiceSection = () => {
           
 
           {/* carts */}
-          <div className="bg-white rounded-md p-4 h-fit min-h-170">
+          <div className="bg-white rounded-md p-4 h-fit md:min-h-170">
             <div className="flex items-center justify-between mb-6 ">
                 <h3 className="text-xl font-semibold">Your Carts</h3>
                 <span className="relative "><ShoppingCart size={18}/>
@@ -131,7 +131,7 @@ const ChoiceSection = () => {
                   </span>
                 </div>
               ))}
-              {/* cart card */}
+              
 
               {/* amount */}
               <div className="divider"></div>
