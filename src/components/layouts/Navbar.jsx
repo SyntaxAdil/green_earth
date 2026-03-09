@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   return (
-    <nav className="bg-[#15803d] py-2">
+    <nav className="bg-[#15803d] py-2 fixed z-10 top-0 left-0 right-0 ">
       <Wrapper extraClasses={"flex items-center justify-between  text-white"}>
         <h1 className="text-2xl md:text-xl font-bold tracking-tighter">
           Green Earth
@@ -31,7 +31,7 @@ const Navbar = () => {
               animate={{ height: 200 }}
               exit={{ height: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-[#15803d] p-4 shadow  fixed top-18 w-full left-0 block md:hidden z-10 overflow-y-hidden"
+              className="bg-[#15803d] p-4 shadow  fixed top-13 w-full left-0 block md:hidden z-10 overflow-y-hidden"
             >
               <ul className=" text-center max-w-6xl mx-auto space-y-3">
                 {NAV_LINKS.map((link) => (
