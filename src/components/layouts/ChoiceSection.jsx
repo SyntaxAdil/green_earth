@@ -38,7 +38,7 @@ const ChoiceSection = () => {
   }, [selectBtn, fetchAllPlantByCategory, fetchAllPlant]);
 
   return (
-    <section className="py-18 ">
+    <section className="py-18 scroll-mt-10" id="gallery">
       <Wrapper>
         <Heading content={"Choose Your Trees"} />
         <div className="mt-8 grid grid-cols-1 md:grid-cols-5 gap-y-8 md:gap-8">

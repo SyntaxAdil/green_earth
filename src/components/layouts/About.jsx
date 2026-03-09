@@ -4,7 +4,7 @@ import ABOUT_IMAGE from "../../assets/about-image.png";
 import Heading from './../Heading';
 const About = () => {
   return (
-    <section>
+    <section id="about" className="scroll-mt-32">
         <Heading content={"About the Campaign"} />
       <Wrapper extraClasses=" grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-16 pb-16">
         <div>

@@ -42,7 +42,7 @@ const closeModal=()=>{
 
   }
   return (
-    <section className="bg-[#166534] py-20">
+    <section className="bg-[#166534] py-20" id="plant_a_tree">
       <Heading content={"Plant a Tree Today"} extraClass="text-white" />
       <Wrapper extraClasses="flex justify-center">
         <form

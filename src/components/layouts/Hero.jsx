@@ -12,7 +12,7 @@ const Hero = () => {
           Join our mission to plant 1 million trees and make the Earth greener
           for future generations.
         </p>
-        <Button content={"Get Involved"} />
+        <a href="#plant_a_tree"><Button content={"Get Involved"} /></a>
       </div>
     </section>
   );

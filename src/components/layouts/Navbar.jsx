@@ -4,7 +4,13 @@ import Wrapper from "./../Wrapper";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 
-const NAV_LINKS = ["about", "gallery", "plant a Tree"];
+// const NAV_LINKS = ["about", "gallery", "plant a Tree"];
+const NAV_LINKS = [
+  { id: 1, link: "about", href: "#about" },
+  { id: 2, link: "gallery", href: "#gallery" },
+  { id: 3, link: "plant a Tree", href: "#plant_a_tree" },
+];
+
 
 const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
@@ -12,17 +18,24 @@ const Navbar = () => {
   return (
     <nav className="bg-[#15803d] py-2 fixed z-10 top-0 left-0 right-0 ">
       <Wrapper extraClasses={"flex items-center justify-between  text-white"}>
-        <h1 className="text-2xl md:text-xl font-bold tracking-tighter">
-          Green Earth
+        <a href="#">
+          <h1 className="uppercase text-2xl font-bold tracking-tighter">
+          Green <span className="tracking-widest ">Earth</span>
         </h1>
+        </a>
         <ul className="items-center gap-6 hidden md:flex">
           {NAV_LINKS.map((link) => (
-            <li key={link} className="capitalize transition-colors duration-150 font-semibold  hover:text-[#facc15]">
-              <a href={`${link}-section`}>{link}</a>
+            <li
+              key={link.id}
+              className="capitalize transition-colors duration-150 font-semibold  hover:text-[#facc15]"
+            >
+              <a href={link.href}>{link.link}</a>
             </li>
           ))}
         </ul>
-        <Button content={"Pant a Tree"} extraClass="hidden md:block" />
+        <a href="#plant_a_tree">
+          <Button content={"Pant a Tree"} extraClass="" />
+        </a>
 
         <AnimatePresence>
           {isMenu && (
@@ -35,11 +48,16 @@ const Navbar = () => {
             >
               <ul className=" text-center max-w-6xl mx-auto space-y-3">
                 {NAV_LINKS.map((link) => (
-                  <li key={link} className="capitalize font-semibold  hover:text-[#facc15]">
-                    <a href={`${link}-section`}>{link}</a>
+                  <li
+                    key={link.id}
+                    className="capitalize font-semibold  hover:text-[#facc15]"
+                  >
+                    <a href={link.href}>{link.link}</a>
                   </li>
                 ))}
-                <Button content={"Pant a Tree"} extraClass="" />
+                <a href="#plant_a_tree">
+                  <Button content={"Pant a Tree"} extraClass="" />
+                </a>
               </ul>
             </motion.div>
           )}

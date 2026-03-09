@@ -5,6 +5,7 @@ import Impact from "../components/layouts/Impact";
 import Navbar from "./../components/layouts/Navbar";
 import Form from './../components/layouts/Form';
 import Footer from "../components/layouts/Footer";
+import ScrollToTop from './../components/ScrollToTop';
 const Home = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Home = () => {
       <Impact/>
       <Form/>
       <Footer />
+      <ScrollToTop/>
     </div>
   );
 };
