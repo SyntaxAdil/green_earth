@@ -17,7 +17,7 @@ const Navbar = () => {
         </h1>
         <ul className="items-center gap-6 hidden md:flex">
           {NAV_LINKS.map((link) => (
-            <li className="capitalize transition-colors duration-150 font-semibold  hover:text-[#facc15]">
+            <li key={link} className="capitalize transition-colors duration-150 font-semibold  hover:text-[#facc15]">
               <a href={`${link}-section`}>{link}</a>
             </li>
           ))}
@@ -35,7 +35,7 @@ const Navbar = () => {
             >
               <ul className=" text-center max-w-6xl mx-auto space-y-3">
                 {NAV_LINKS.map((link) => (
-                  <li className="capitalize font-semibold  hover:text-[#facc15]">
+                  <li key={link} className="capitalize font-semibold  hover:text-[#facc15]">
                     <a href={`${link}-section`}>{link}</a>
                   </li>
                 ))}

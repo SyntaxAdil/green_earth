@@ -10,3 +10,9 @@
   background-size: contain;
 }
 
+@utility scrollbar-none {
+  
+  scrollbar-width: none;
+}
+
+

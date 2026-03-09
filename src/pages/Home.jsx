@@ -1,3 +1,4 @@
+import ChoiceSection from "../components/layouts/ChoiceSection";
 import Hero from "../components/layouts/Hero";
 import Navbar from "./../components/layouts/Navbar";
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
+      <ChoiceSection />
     </div>
   );
 };
