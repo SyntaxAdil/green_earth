@@ -33,8 +33,8 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <a href="#plant_a_tree">
-          <Button content={"Pant a Tree"} extraClass="" />
+        <a href="#plant_a_tree" className="hidden md:block">
+          <Button content={"Pant a Tree"} />
         </a>
 
         <AnimatePresence>

@@ -7,5 +7,5 @@ import PlantContextProvider from "./context/PlantContext.jsx"
 createRoot(document.getElementById("root")).render(
   <PlantContextProvider>
     <App />
-  </PlantContextProvider>,
+  </PlantContextProvider>
 );
